@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САЛАВАТ</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="assets/js/slider.js"></script>
+    <script src="assets/js/favourites.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/toolbar.js"></script>    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+        });
+    });
+</script>        
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <div class="preloader__bar">
+            <span class="loader"></span> 
+        </div>        
+    </div>
+
+    <div class="slider">
+        <div class="itcss">
+            <div class="itcss__wrapper">
+              <div class="itcss__items">
+                <div class="itcss__item">
+                    <a class="" href="assets/pages/Film.html">
+                      <img class="slider__image" src="assets/img/135271_3316.webp"  alt="">
+                    </a>
+                  </div>
+                  <div class="itcss__item">
+                    <a class="" href="assets/pages/Film2.html">
+                      <img class="slider__image" src="assets/img/592818_3334.webp"  alt="">
+                    </a>
+                  </div>
+                  <div class="itcss__item">
+                    <a class="" href="#">
+                      <img class="slider__image" src="assets/img/908526_3328.webp"  alt="">
+                    </a>
+                  </div>
+              </div>
+            </div>
+            <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+            <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+          </div>
+    </div>
+
+    <main>    
+        <div class="container__logo">
+            <a class="logo" href="#">САЛАВАТ</a>
+        </div>  
+        <div class="poster">
+            <div class="container">
+                <nav id="nav" class="nav">
+                    <ul class="nav__list">
+                        <li> <a class="nav-link" href="">Главная</a></li>
+                        <li><a class="nav-link" href="assets/pages/Contacts.html">Контакты</a></li>
+                    </ul>                        
+                </nav>
+                    <div id="poster__main" class="poster__main">
+                        <h2 class="poster__title" >Фильмы в прокате</h2>
+                        <button class="set__favorite__btn" data-isActive="false">Избранное</button>
+                        <div class="poster__container">
+                            <div id="Government" data-id="Government" class="poster__item">
+                                <div class="poster__img__holder">
+                                <span class="poster__rating">18+</span>
+                                <button class="favorite__btn material-symbols-outlined" data-favoriteId="Government" data-favorite="favorite"> 
+                                        favorite
+                                    <!-- <img class="favorite__icon" data-favorite="none" src="assets/img/favorite.svg" alt=""> -->
+                                 </button>
+                                <a href="assets/pages/Film.html"><img class="poster__img" src="assets\img\The-Ministry-of-Ungentlemanly-Warfare-Cover.jpg" alt=""> </a>
+                                </div>
+                                <div class="poster__item__text">
+                                    <a href="assets/pages/Film.html" class="poster__item__title">Министерство неджентльменских дел</a>
+                                    <p class="poster__item__suptitle">комедийный экшн</p>
+                                </div>
+                            </div>
+                            <div id="Storm" data-id="Storm" class="poster__item nonfavorites">
+                                <div class="poster__img__holder">
+                                <span class="poster__rating">16+</span>
+                                <button class="favorite__btn material-symbols-outlined" data-favoriteId="Storm" data-favorite="none" class="StormButton"> 
+                                    favorite
+                                    <!-- <img class="favorite__icon" data-favorite="none" src="assets/img/favorite.svg" alt="">  -->
+                                </button>
+                                <a href="assets/pages/Film2.html"><img class="poster__img" src="assets\img\Постер_Майор_Гром_Игра.jpg" alt=""> </a>
+                                </div>
+                                <div class="poster__item__text">
+                                    <a href="assets/pages/Film2.html" class="poster__item__title">Майор Гром: Игра</a>
+                                    <p class="poster__item__suptitle">приключения, экшн</p>
+                                </div>
+                            </div>
+                            <div id="Spell" data-id="Spell" class="poster__item nonfavorites">
+                                <div class="poster__img__holder">
+                                <span class="poster__rating">18+</span>
+                                <button class="favorite__btn material-symbols-outlined" data-favoriteId="Spell" data-favorite="none" id="SpellButton"> 
+                                    favorite
+                                    <!-- <img class="favorite__icon" data-favorite="favorite" src="assets/img/favorite.svg" alt="">  -->
+                                </button>
+                                <a href="assets/pages/Film3.html"><img class="poster__img" src="assets\img\заклятье.webp" alt=""> </a>
+                                </div>
+                                <div class="poster__item__text">
+                                    <a href="assets/pages/Film3.html" class="poster__item__title">Заклятье. Мертвые воды</a>
+                                    <p class="poster__item__suptitle">Хоррор</p>
+                                </div>
+                            </div>   
+                            <div id="Heaven" data-id="Heaven" class="poster__item nonfavorites">
+                                <div class="poster__img__holder">
+                                <span class="poster__rating">18+</span>
+                                <button class="favorite__btn material-symbols-outlined" data-favoriteId="Heaven" data-favorite="none" id="HeavenButton"> 
+                                    favorite
+                                    <!-- <img class="favorite__icon" data-favorite="none" src="assets/img/favorite.svg" alt=""> -->
+                                 </button>
+                                <a href="assets/pages/Film4.html"><img class="poster__img" src="https://cdn.mirage.ru/images/film/5000/small/p5990.jpg?kung-fu-panda-4" alt=""> </a>
+                                </div>
+                                <div class="poster__item__text">
+                                    <a href="assets/pages/Film4.html" class="poster__item__title">Кунг-фу Панда 4</a>
+                                    <p class="poster__item__suptitle">мультфильм</p>
+                                </div>
+                            </div>                                                    
+                    </div>                        
+                </div>                
+            </div>
+        </div>
+
+        <div class="toolbarBlock">
+
+            <button id="toolbarButton" class="toolbarButton ">
+                <!-- <img class="toolbarButtonIcon" src="/assets/img/135271_3316.webp" alt=""> -->
+            </button>
+            <button id="toolbarButtonClose" class="toolbarButton disable">
+                <!-- <img class="toolbarButtonIcon" src="/assets/img/135271_3316.webp" alt=""> -->
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">2024-2024 Сеть кинотеатров «САЛАВАТ» – все права защищены.</p>
+            <!-- <p class="footer__text">ежедневно 10:00-02:00</p> -->
+            <!-- <p class="footer__text">Реклама и сотрудничество: <a class="footer__text" href="mailto:kzpes@cinema-7.ru">kzpes@cinema-7.ru</a></p> -->
+        </div>
+    </footer>
+</body>
+</html>

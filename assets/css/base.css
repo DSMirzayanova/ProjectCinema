@@ -1,0 +1,268 @@
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; 
+}
+
+li {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;   
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container__logo {
+    max-width: 1300px;    
+}
+
+.logo {
+    text-decoration: none;
+    color: red;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    background-color: #0E0F11;
+    z-index: 0;
+}
+
+.nav.enable {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav__list {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.nav-link {   
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    color: #8B919B;
+
+    transition: color .3s ease;
+    font-size: 24px;
+
+    padding-left: 10px;
+}
+
+.nav-link:after {
+    display: block;
+    margin: 0 auto;
+    background: white;    
+    content: "";        
+    height: 2px;            
+    transform: scale(0);
+    transition: transform .3s ease;
+    width: 30px;
+}
+
+.nav-link:hover:after {
+    transform: scale(1);
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 40px;
+}
+
+.footer__title {
+    border-top: 1px solid rgb(159, 159, 159);
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.footer__container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.footer__text {
+    margin-top: 30px;
+    border-top: 1px solid rgb(159, 159, 159);
+    padding-top: 20px;
+
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+
+.toolbarBlock {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+
+
+
+    background-color: black;
+    z-index: 990;
+    display: none;
+    opacity: 0;
+
+    transition: opacity .5s ease;
+}
+
+@media only screen and (max-width : 1224px) {
+    .container {
+        max-width: 1020px;
+    }
+
+    .nav {
+        width: 15%;
+    }
+
+    .footer__container {
+        max-width: 100%;
+
+    }
+
+    .toolbarBlock {
+        position: fixed;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+    
+    
+    
+        background-color: black;
+        z-index: 990;
+        display: none;
+        opacity: 0;
+    
+        transition: opacity .5s ease;
+    }
+    
+    .toolbarButton {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        background-image: url(../img/menu.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .toolbarButton.disable {
+        display: none;
+    }
+    
+}
+
+
+@media only screen and (min-device-width : 536px) and (max-device-width : 1024px) {
+    .container {
+        margin: 0 auto;
+        max-width: 80%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container__logo {
+        max-width: 90%;    
+    }
+
+    .nav {
+        display: none;
+        width: 20%;
+    }
+
+
+    .footer__container {
+        max-width: 100%;
+    }
+
+    .toolbarBlock {
+        display: block;
+        opacity: 1;
+        z-index: 100011;
+    }
+    .nav.enable {
+        display: inline-block;
+        position: fixed;
+        height: 80vh;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        z-index: 10001;   
+    }
+    
+}
+
+@media only screen and (min-device-width : 120px) and (max-device-width : 535px) {
+    .nav {
+        display: none;
+        width: 20%;
+    }
+    
+    .container {
+        max-width: 90%;
+    }
+
+    .container__logo {
+        max-width: 80%;    
+    }
+    
+    .footer__text {
+        padding-top: 10px;
+        margin-top: 15px;
+        font-size: 10px;
+    }
+
+    .toolbarBlock {
+        position: fixed;
+        display: block;
+        opacity: 1;
+        z-index: 100011;
+    }
+    .nav.enable {
+        display: block;
+        position: fixed;
+        height: 80vh;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+
+        z-index: 10001;   
+    }
+}
+ 

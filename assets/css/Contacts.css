@@ -1,0 +1,144 @@
+.contacts {
+
+}
+
+.contact__main {
+    width: 85%;
+}
+
+.contacts__blocks {
+    margin-top: 40px;
+
+    color: white;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.contact__block {
+    width: 50%;
+}
+
+.contacts__block__item {
+    flex-basis: 200;
+}
+
+.contacts__title {
+    font-size: white;
+    font-size: 48px;
+}
+
+.contacts__title {
+    color: white;
+}
+
+.contacts__time {
+    margin: 24px 0 0;
+
+    color: white;
+   font-size: 24px;    
+}
+
+.contact_phone {
+    text-decoration: none;
+    color: white;
+
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contacts__block__title {
+    font-size: 24px;    
+}
+
+.contacts__block__email {
+    font-size: 18px;
+    color: rgb(85, 26, 139);
+    text-decoration: none;
+}
+
+@media only screen and (max-width : 1224px) {
+
+}
+
+
+@media only screen and (min-device-width : 536px) and (max-device-width : 1024px) {
+    .contact__main {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact__container {
+        max-width: 100%;
+
+        width: 100%;
+    }
+
+    .contact__block {
+        width: 100%;
+    }
+    
+    .contacts__blocks {
+        margin-top: 30px;
+    }
+    
+    .contacts__block__item {
+        margin-top: 20px;
+    }
+
+    .contact_title {
+        font-size: 36px;        
+    }
+
+    .contact_phone {
+        font-size: 50px;
+    }
+
+    .contact__time {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-device-width : 120px) and (max-device-width : 535px) {
+    .contact__main {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contact__container {
+        max-width: 100%;
+
+        width: 100%;
+    }
+
+    .contact__block {
+        width: 100%;
+    }
+    
+    
+    .contacts_title {
+        font-size: 20px;        
+    }
+
+    .contact_phone {
+        font-size: 20px;
+    }
+
+    .contacts__time {
+        margin: 15px 0 0;
+        font-size: 18px;
+    }
+    
+    .iframe_map {
+        width: 100%;
+        height: 200px;
+    }
+}
+ 

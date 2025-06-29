@@ -1,0 +1,405 @@
+/* SLIDER */
+/* .slider {
+    
+} */
+
+.slider__image {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+/* POSTER */
+
+.poster__title {
+    margin: 40px auto;
+    font-size: 36px;
+    color: white;
+}
+
+.set__favorite__btn {
+    background: none;
+    border: none;
+
+    color: white;
+
+    background-color: #1C1F23;
+    border-radius: 10px;
+    padding: 10px;
+
+    transition: background-color .3s ease;
+}
+
+.set__favorite__btn[data-isActive="false"] {
+    background: none;
+    border: none;
+
+    color: white;
+
+    background-color: #1C1F23;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.set__favorite__btn[data-isActive="true"] {
+    color: white;
+
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.poster__block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.poster__main {
+    width: 85%;
+}
+
+.poster__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.poster__item {    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25%;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+
+.poster__item--hide {
+    display: none;
+}
+
+.poster__img__holder {
+    overflow: hidden;
+    border-radius: 20px;
+
+    height: 354px;
+    width: 240px;
+    
+
+    z-index: 100;
+}
+
+.poster__img {
+    border-radius: 20px;
+    height: 354px;
+    width: 240px;
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s ease;
+
+}
+
+.poster__rating {
+    position: relative;
+    left: 20px;
+    top: 40px;
+
+    background-color: red;
+    padding: 10px;
+    border-radius: 8px;
+
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+
+    z-index: 100;
+}
+
+.poster__img:hover {
+    transform: scale(1.2);
+}
+ 
+.poster__item__title {    
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+
+    transition: color .2s ease;
+}
+
+.poster__item__title:hover {
+    color: rgb(85, 26, 139);
+}
+
+.poster__item__suptitle {
+    font-size: 14px;
+
+    color: rgb(83, 83, 83);
+}
+
+.poster__text__rating {
+    height: 70px;
+}
+
+.favorite__btn {
+    background: none;
+    border: none;
+
+    position: relative;
+    right: -60%;
+    top: 50px;
+
+    z-index: 100;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+}
+
+.favorite__icon {
+    font-size: 30px;
+    color: red;
+}
+
+
+.favorite__btn[data-favorite="none"] {
+    color: white;
+}
+
+.favorite__btn[data-favorite="favorite"] {
+    color: red;
+}
+
+
+@media only screen and (max-width : 1224px) {
+
+    .poster__item {
+        max-width: 30%;
+        margin: 25px auto;
+    }
+
+    .poster__title {
+        margin: 20px 0;
+    }
+
+    .poster__main {
+        width: 100%;
+    }
+
+    .poster__container {
+        flex-wrap: wrap;
+        flex-basis: 500;
+    }
+
+    .poster__item__title {
+        font-size: 20px;
+    }
+
+    .poster__item__text {
+        max-width: 75%;
+        width: 75%;        
+    }
+
+   
+}
+
+@media only screen and (min-device-width : 900px) and (max-device-width : 1024px) {
+    .poster__title {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .poster__main {
+        width: 100%;
+    }    
+
+    .poster__container {
+        flex-wrap: wrap;
+    }
+    .poster__item {
+        max-width: 30%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .poster__item__text {
+        max-width: 55%;
+    }
+
+    .poster__item__title {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-device-width : 696px) and (max-device-width : 900px) {
+    .poster__title {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .poster__main {
+        width: 100%;
+    }    
+
+    .poster__container {
+        flex-wrap: wrap;
+    }
+    .poster__item {
+        max-width: 40%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .poster__item__text {
+        max-width: 55%;
+    }
+
+    .poster__item__title {
+        font-size: 16px;
+    }
+
+    
+}
+
+@media only screen and (min-device-width : 536px) and (max-device-width : 696px) {
+    .poster__title {
+        margin: 0;
+        margin-top: 30px;
+    }
+    .poster__main {
+        width: 100%;
+    }    
+
+    .poster__main.disable {
+        display: none;
+        visibility: hidden;
+    }
+
+    .poster__container {
+        flex-wrap: wrap;
+    }
+    .poster__item {
+        max-width: 52%;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .poster__item__text {
+        max-width: 55%;
+    }
+
+    .poster__item__title {
+        font-size: 16px;
+    }
+
+}
+
+	
+ 
+@media only screen and (min-device-width : 370px) and (max-device-width : 535px) {
+    
+    .nav {
+        display: none;
+    }
+
+    .poster__main {
+        padding: 0;        
+    }
+
+    .poster__main.disable {
+        display: none;
+    }
+
+    .poster__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .poster__title {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    
+    .poster__item {
+        width: 100%;
+        max-width: 100%;
+        /* max-height: 150px; */
+    }
+    
+    .poster__item__text {
+        margin: 0;
+        margin-top: 10px;
+        max-width: 60%;
+    }
+
+    .poster__item__title {
+        font-size: 15px;
+    }
+
+    .poster__item__suptitle {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+    .poster__img__holder {
+        width: 100%;
+        
+    }
+    .poster__img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width : 120px) and (max-device-width : 369px) {
+    .nav {
+        display: none;
+    }
+
+    .poster__main {
+        padding: 0;        
+    }
+
+    .poster__main.disable {
+        display: none;
+    }
+
+    .poster__container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .poster__title {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    
+    .poster__item {
+        width: 100%;
+        max-width: 100%;
+        /* max-height: 150px; */
+    }
+    
+    .poster__item__text {
+        margin: 0;
+        margin-top: 10px;
+        max-width: 60%;
+    }
+
+    .poster__item__title {
+        font-size: 15px;
+    }
+
+    .poster__item__suptitle {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+    .poster__img__holder {
+        width: 100%;
+        
+    }
+    .poster__img {
+        width: 100%;
+    }
+}
+ 
+
+ 
